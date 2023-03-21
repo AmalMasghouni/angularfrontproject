@@ -1,0 +1,41 @@
+<div class="full_container">
+    <div class="container">
+       <div class="center verticle_center full_height">
+          <div class="login_section">
+             <div class="logo_login">
+                <div class="center">
+                   <img width="210" src="assets/images/logo/logo.png" alt="#" />
+                </div>
+             </div>
+             <div class="login_form">
+                <form (submit)="onSubmit()">
+                   <fieldset>
+                      <div class="field">
+                         <label class="label_field">Email Address</label>
+                         <input [(ngModel)]="UserData.email" type="email" name="email" placeholder="E-mail" />
+                      </div>
+                      <div class="field">
+                         <label class="label_field">Password</label>
+                         <input [(ngModel)]="UserData.password" type="password" name="password" placeholder="Password" />
+                      </div>
+                      <div class="field">
+                         <label class="label_field hidden">hidden label</label>
+                         <label class="form-check-label"><input type="checkbox" class="form-check-input"> Remember Me</label>
+                         <a class="forgot" routerLink="/mot-de-passe-oublie">Mot de passe oublié ?</a>
+                      </div>
+                      <div class="field margin_0">
+                         <label class="label_field hidden">hidden label</label>
+                         <input type="submit" class="main_bt" value="Sing In">
+                         
+                     </div>
+                      <div class="field margin_0">
+                        <label class="label_field hidden">hidden label</label>
+                        <a class="register" routerLink="/register">Je ne suis pas inscrit</a>
+                     </div>
+                   </fieldset>
+                </form>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
